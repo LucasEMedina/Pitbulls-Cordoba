@@ -1,0 +1,824 @@
+/*----- Propiedades generales -----*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #DFA72D;
+}
+
+li {
+	list-style-type: none;
+}
+
+.body-index {
+	display: flex;
+	flex-direction: column;
+	background-image: url(../fondos/pb-negro.png);
+	background-size: contain;
+	width: 100vw;
+}
+
+
+
+/*----- Header y nav -----*/
+header {
+
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100vw;
+	background-color: #2c1509af;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.h1-header {
+	font-family: 'Stardos Stencil', cursive;
+	font-size: 2rem;
+	color: #DFA72D;
+	align-self: center;
+	margin: 0.5rem 0;
+
+}
+
+.nav-header {
+	margin: .5rem 0;
+	width: 100vw;
+
+}
+
+.ul-nav {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.ul-nav li {
+	font-family: 'Aldrich', sans-serif;
+	font-size: .8rem;
+
+}
+
+/*----- Media Query Header y nav -----*/
+@media screen and (min-width: 768px) {
+
+	.h1-header {
+		font-size: 3rem;
+
+	}
+
+	.ul-nav li {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		justify-content: space-between;
+
+	}
+
+	.h1-header {
+
+		font-size: 3.2rem;
+		text-align: center;
+		margin: 1rem;
+		padding: 0 1rem;
+	}
+
+	.nav-header {
+		width: auto;
+		margin-bottom: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+	.ul-nav li {
+		display: inline;
+		font-family: 'Aldrich', sans-serif;
+		font-size: 1rem;
+		padding: .5rem;
+	}
+}
+
+/*----- Estilos pagina Index -----*/
+
+/*----- Section y articles -----*/
+.section-index {
+	grid-area: section;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.h2-section {
+	color: #8a250b;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 2.2rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+.h3-article {
+	color: #f1db0c;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Mohave', sans-serif;
+	color: #D2F7E7;
+	margin: 1.5rem .5rem;
+
+}
+
+article p {
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+article img {
+	width: 300px;
+	margin: 0.5rem 0;
+
+}
+
+/*----- Media Query Section y Articles -----*/
+@media screen and (min-width: 768px) {
+	.h2-section {
+		font-size: 2.2rem;
+	}
+
+	.h3-article {
+		font-size: 2rem;
+	}
+
+	article p {
+		font-size: 1.2rem;
+	}
+
+	article img {
+		width: 500px;
+
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+	.section-index {
+		display: block;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 0 1rem;
+	}
+
+	.h2-section {
+		color: #8a250b;
+		font-family: 'Stick No Bills', sans-serif;
+		font-size: 2.5rem;
+		text-align: center;
+		margin: 1rem;
+	}
+
+	.h3-article {
+		color: #f1db0c;
+		font-size: 1.8rem;
+		text-align: flex-end;
+	}
+
+	article {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 1.5rem 1.5rem;
+
+	}
+
+	article p {
+		font-size: 1.1rem;
+		text-align: start;
+	}
+
+	article img {
+		width: 500px;
+		margin: 0.5rem 0;
+
+	}
+
+}
+
+/*----- Seccion Videos -----*/
+.videos-index {
+	width: 100vw;
+	height: auto;
+	background-image: url(../fondos/mama-cachorro.png);
+}
+
+.div-videos {
+	display: flex;
+	overflow: auto;
+	margin: .2rem;
+}
+
+.div-videos div {
+	margin: .2rem;
+}
+
+.h2-videos {
+	font-family: 'Stick No Bills', sans-serif;
+	font-weight: 600;
+	font-size: 2.2rem;
+	color: #f0dd30;
+	text-align: center;
+}
+
+.iframe {
+	width: 300px;
+	height: 168px;
+}
+
+/*----- Media Query Videos -----*/
+
+@media screen and (min-width: 468px) {
+
+	.iframe {
+		width: 400px;
+		height: 225px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.iframe {
+		width: 560px;
+		height: 315px;
+	}
+}
+
+/*----- Footer general -----*/
+
+footer {
+	font-family: 'Aldrich', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #D2F7E7;
+	background-color: #2c1509af;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;	
+}
+
+footer div {
+	color: #DFA72D;
+	margin: .5rem 0;
+}
+
+footer div h4 {
+	color: #f0dd30;
+	font-size: 1.2rem;
+}
+
+.ul-redes {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.ul-pages {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.icons-footer {
+	width: 25px;
+}
+
+/*----- Media Query Footer -----*/
+
+/*--- No se hace Media Query para 1024px xq se ve perfecto con las propiedades de 768px---*/
+
+@media screen and (min-width: 768px) {
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	footer div {
+		color: #DFA72D;
+		align-items: center;
+	}
+
+	footer div h4 {
+		font-size: 1.5rem;
+	}
+
+	.ul-redes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.ul-pages {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.ul-pages li {
+		margin: .5rem 0;
+	}
+
+	.icons-footer {
+		width: 30px;
+	}
+
+}
+
+/*----- Final de Footer gral -----*/
+
+/*----- Estilos pagina de Contacto -----*/
+.contact-body {
+	background-image: url(../fondos/pb-marron.png);
+	background-size: cover;
+	background-position: center;
+		
+}
+
+.contact-main {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.contact-form input {
+	background-color: #33140557;
+	border: none;
+	color: #e4d5d5;
+	font-family: 'Mohave', sans-serif;
+	font-size: 1rem;
+}
+
+.contact-form textarea {
+	background-color: #33140557;
+	font-family: 'Mohave', sans-serif;
+	color: #e4d5d5;
+	font-size: 1rem;
+	margin: .5rem;
+}
+
+.contact-form label {
+	color: #701205;
+	font-family: 'Stick No Bills', sans-serif;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.contact-form .boton-form {
+	background-color: #c00b0bb4;
+	padding: 0 .5rem;
+	border-radius: 5px;
+}
+
+::placeholder {
+	color: #1f1b19;
+	font-size: 1rem;
+}
+
+/*----- Media Query pagina Contacto -----*/
+/*--- No se hace Media Query para 768px xq se ve perfecto con las propiedades originales---*/
+
+@media screen and (min-width: 1024px){
+	.contact-body{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}	
+
+	.contact-main{
+		justify-content: center;
+		align-items: flex-start;
+		padding-left: 10vw;
+	}
+}
+
+/*----- Final de Estilos pagina de Contacto -----*/
+
+/*----- Estilos pagina Nosotros -----*/
+.nosotros-body {
+	background-image: url(../fondos/cachorro-blue.png);
+	background-size: cover;	
+}
+
+.nosotros-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #2c15094b;
+}
+
+.nosotros-article {
+	color:#e4d5d5;
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-align: center;
+	padding: .5rem;
+}
+
+.nosotros-article p{
+	margin-top: 1rem;
+}
+.nosotros-article hr{
+	width: 80%;
+	
+}
+
+/*----- Media Query pagina Nosotros -----*/
+
+@media screen and (min-width: 768px){
+	
+	.nosotros-article{
+		font-size: 1.5rem;
+		padding: 0 1rem;
+	}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	.nosotros-body{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.nosotros-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 1rem;		
+	}
+
+	.nosotros-article{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 1.5rem;
+		color:#e4d5d5		
+	}
+
+	.nosotros-article p{
+		text-align: center;		
+	}
+
+}
+
+/*----- Final de Estilos pagina Nosotros -----*/
+
+/*----- Estilos pagina Accesorios -----*/
+.accesorios-body {
+	background-image: url(../fondos/huesos-green.png);
+	background-size: contain;
+}
+
+.contain-accesorios{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #44261757;
+}
+
+.contain-accesorios h2 {
+	text-align: center;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #7C330F;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.contain-accesorios img {
+	width: 200px;
+	height: 200px;
+	border: solid 1px black;
+}
+.arnes-pecheras{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(8, 400px);
+}
+
+.cadenas-collares{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(5, 400px);
+}
+
+.bozales{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(5, 400px);
+}
+
+.cadenas-sogas{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(5, 400px);	
+}
+
+.pañuelos{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(6, 400px);
+	margin-bottom: 2rem;
+}
+
+.contain-accesorios article {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: .5rem;
+	margin: .5rem 0;
+}
+
+.contain-accesorios article h3{
+	font-family: 'Mohave', sans-serif;
+	color: #eba91c;
+	font-size: 1.2rem;
+	margin: 1rem 0;
+}
+
+.contain-accesorios article p{
+	font-family: 'Mohave', sans-serif;
+	color: #f7d309;
+}
+
+.accesorios-img article:hover {
+	background-color: #2c15095d;
+}
+
+/*----- Media Query pagina Accesorios -----*/
+
+@media screen and (min-width: 768px) {
+
+	.arnes-pecheras{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(4, 400px);
+	}
+	
+	.cadenas-collares{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(3, 400px);
+	}
+	
+	.bozales{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(3, 400px);
+	}
+	
+	.cadenas-sogas{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(3, 400px);	
+	}
+	
+	.pañuelos{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: 420px repeat(2, 400px);
+		margin-bottom: 2rem;
+	}
+
+	.contain-accesorios article {
+		padding: .5rem;
+		margin: .5rem 1rem;
+	}
+
+	.contain-accesorios article h3{
+		font-size: 1.5rem;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	.arnes-pecheras{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(3, 400px);
+	}
+	
+	.cadenas-collares{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(2, 400px);
+	}
+	
+	.bozales{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(2, 400px);
+	}
+	
+	.cadenas-sogas{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(2, 400px);	
+	}
+	
+	.pañuelos{
+		grid-template-columns: repeat(3,290px);
+		grid-template-rows: repeat(2, 400px);
+		margin-bottom: 2rem;
+	}
+
+	.contain-accesorios article {
+		padding: .5rem;
+		margin: .5rem 1rem;
+	}
+
+	.contain-accesorios h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+
+}
+
+/*----- Final de Estilos pagina Accesorios -----*/
+
+/*----- Estilos pagina Juguetes -----*/
+.juguetes-body {
+	background-image: url(../fondos/hojas-secas.png);
+	background-size: contain;
+}
+
+.contain-juguetes{
+	background-color: #44261757;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contain-juguetes img {
+	width: 200px;
+	height: 200px;
+	border: solid 1px black;
+}
+
+.contain-juguetes h2 {
+	text-align: center;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #08180b;
+	margin-top: 1.5rem;
+	background-color: #f7df0c73;
+	width: 100vw;
+}
+
+.juguetes-mordillos{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(5, 400px);
+}
+
+.sogas-fuerza{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(5, 400px);
+}
+
+.combos-huesos{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(5, 400px);
+}
+
+.comederos{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: repeat(5, 400px);
+	margin-bottom: 1.5rem;
+}
+
+.contain-juguetes article {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: .5rem;
+	margin: .5rem 0;
+}
+
+.contain-juguetes article p{
+	font-family: 'Mohave', sans-serif;
+	color: #D2F7E7;
+}
+
+.contain-juguetes article h3{
+	font-family: 'Mohave', sans-serif;
+	font-size: 1.5rem;
+	color: #D2F7E7;
+}
+
+/*----- Media Query pagina Juguetes -----*/
+
+@media screen and (min-width: 768px) {
+
+	.juguetes-mordillos{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(3, 400px);
+	}
+	
+	.sogas-fuerza{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(3, 400px);
+	}
+	
+	.combos-huesos{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(3, 400px);
+	}
+	
+	.comederos{
+		grid-template-columns: 280px 280px;
+		grid-template-rows: repeat(3, 400px);	
+	}
+	
+	.contain-juguetes h2{
+		font-size: 2.5rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.contain-juguetes article {
+		padding: .5rem;
+		margin: .5rem 1rem;
+	}
+
+	.contain-juguetes article h3{
+		font-size: 1.5rem;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	.juguetes-mordillos{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(2, 360px);
+	}
+	
+	.sogas-fuerza{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(2, 360px);
+	}
+	
+	.combos-huesos{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(2, 360px);
+	}
+	
+	.comederos{
+		grid-template-columns: repeat(3,280px);
+		grid-template-rows: repeat(2, 380px);	
+	}
+	
+	.contain-juguetes h2 {
+		font-size: 2.5rem;
+	}
+
+}
+
+
+/*----- Final Estilos pagina Juguetes -----*/

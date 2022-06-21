@@ -1,0 +1,285 @@
+/*----- Propiedades generales -----*/
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #DFA72D;	
+}
+li {
+	list-style-type: none;
+}
+.body-index {
+	background-image: url(../fondos/pb-negro.png);
+	background-size: contain;	
+}
+.icons-footer{
+	width: 35px;
+}
+/*----- Header y nav -----*/
+header {
+	display: flex;
+	width: 100vw;
+	background-color: #2c15095d;
+	justify-content: space-between;
+}
+.h1-header {
+	font-family: 'Stardos Stencil', cursive;
+	font-size: 4rem;
+	color: #DFA72D;
+	text-align: center;
+	margin: 1rem;
+	padding: 1rem;
+}
+.nav-header {
+	margin: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-self: flex-start;
+}
+.ul-nav li {
+	display: inline;
+	font-family: 'Aldrich', sans-serif;
+	padding: 1rem;
+}
+/*----- Estilos pagina Index -----*/
+/*----- Section y articles -----*/
+.h2-section {
+	color: #7C330F;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	margin: 1rem;
+}
+.h3-article {
+	color: #f0dd30;
+	font-size: 2rem;
+}
+article {
+	font-family: 'Mohave', sans-serif;
+	color: #D2F7E7;
+	margin: 2rem;
+}
+article img {
+	width: 500px;
+	
+}
+/*----- Seccion Videos -----*/
+.videos-index {
+	width: 100%;
+	height: auto;
+	background-image: url(../fondos/mama-cachorro.png);
+}
+.div-videos {
+	display: flex;
+	overflow: auto;
+	margin: .2rem;
+}
+.div-videos div {
+	margin: .2rem;
+}
+.h2-videos {
+	font-family: 'Stick No Bills', sans-serif;
+	font-weight: 600;
+	font-size: 3rem;
+	color: #f0dd30;
+	text-align: center;
+	padding-top: 1rem;
+}
+/*----- Final de Estilos Index -----*/
+
+/*----- Footer general -----*/
+footer {
+	font-family: 'Aldrich', sans-serif;
+	font-weight: 400;
+	color: #D2F7E7;
+	background-color: #2c15095d;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	text-align: center;
+}
+footer div {
+	color: #DFA72D;
+	align-items: center;	
+}
+footer div h4 {
+	color: #f0dd30;
+	font-size: 1.2rem;
+}
+.ul-pages li{
+	padding: .5rem 0;
+}
+/*----- Final de Footer gral -----*/
+
+/*----- Estilos pagina de Contacto -----*/
+.contact-body{
+	background-image: url(../fondos/pb-marron.png);
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+}
+.contact-main {
+	display: flex;
+	height: 67vh;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 5rem;	
+}
+
+.contact-form input {
+	background-color: #33140557;
+	border: none;
+	color: #f0dd30;
+	font-family: 'Mohave', sans-serif;
+	font-size: 1rem;
+}
+.contact-form textarea{
+	background-color: #33140557;
+	font-family: 'Mohave', sans-serif;
+	color: #f0dd30;
+	font-size: 1rem;
+	margin: .5rem;
+}
+.contact-form label{
+	color: #7C330F;
+	font-family: 'Stick No Bills', sans-serif;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+.contact-form .boton-form{
+	background-color: #c00b0bb4;
+	padding: 0 .5rem;
+	border-radius: 5px;
+}
+::placeholder{
+	color: #1f1b19;
+	font-size: 1rem;
+}
+.contact-footer{
+	display: flex;
+	position: absolute;
+	width: 100vw;
+	bottom: 0;	
+}
+/*----- Final de Estilos pagina de Contacto -----*/
+
+/*----- Estilos pagina Nosotros -----*/
+.nosotros-body{
+	background-image: url(../fondos/mama-cachorro.png);
+	background-size: cover;	
+}
+.nosotros-section{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nosotros-section article{
+	color: #1d8a6f;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.nosotros-section article:first-child:hover{
+	background-color: #2c15095d;
+	margin: 0;
+	padding: 2rem;
+}
+.nosotros-section article:nth-child(2):hover{
+	background-color: #2c15095d;
+	margin: 0;
+	padding: 2rem;
+}
+.nosotros-section article:nth-child(3):hover{
+	background-color: #2c15095d;
+	margin: 0;
+	padding: 2rem;
+}
+/*----- Final de Estilos pagina Nosotros -----*/
+
+/*----- Estilos pagina Accesorios -----*/
+.accesorios-body{
+	background-image: url(../fondos/pb-concamisa.png);
+	background-size: contain;
+	
+	
+}
+.contain-accesorios h2{
+	text-align: center;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #7C330F;
+}
+.contain-accesorios img{
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	border: solid 1px black;
+}
+.accesorios-img{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.accesorios-img article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	width: 300px;
+	height: 350px;
+	border: 2px solid #000000;
+}
+.accesorios-img article:hover{
+	background-color: #2c15095d;
+}
+/*----- Final de Estilos pagina Accesorios -----*/
+
+/*----- Estilos pagina Juguetes -----*/
+.juguetes-body{
+	background-image: url(../fondos/pb-yellow.png);
+	background-size: contain;
+}
+.contain-juguetes img{
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	border: solid 1px black;
+}
+.contain-juguetes h2{
+	text-align: center;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #7C330F;
+}
+.contain-juguetes h2:hover{
+	background-color: #2c15095d;
+		
+}
+.juguetes-img{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.juguetes-img article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	width: 300px;
+	height: 350px;
+	border: 2px solid #000000;
+}
+.juguetes-img article:hover{
+	background-color: #2c15095d;
+}
+/*----- Final Estilos pagina Juguetes -----*/
+
+
+
