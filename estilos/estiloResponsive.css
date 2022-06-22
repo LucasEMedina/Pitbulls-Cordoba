@@ -18,10 +18,17 @@ li {
 	display: flex;
 	flex-direction: column;
 	background-image: url(../fondos/pb-negro.png);
-	background-size: contain;
+	background-size: cover;
+	background-attachment: fixed;
 	width: 100vw;
 }
+/*----- Media Query Body Index -----*/
+@media screen and (min-width: 1024px){
+	.body-index{
+		background-size: contain;
+	}
 
+}
 
 
 /*----- Header y nav -----*/
@@ -42,7 +49,24 @@ header {
 	color: #DFA72D;
 	align-self: center;
 	margin: 0.5rem 0;
-
+	animation-name: achicar;
+	animation-duration: 3s;
+	animation-iteration-count: 3;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-delay: 1s;
+	
+}
+@keyframes achicar {
+	0% {
+		font-size: 2rem;
+	}
+	50% {
+		font-size: 1.5rem;
+	}
+	100% {
+		font-size: 1rem;
+	}
 }
 
 .nav-header {
