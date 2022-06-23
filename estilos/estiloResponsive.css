@@ -48,44 +48,37 @@ header {
 	font-size: 2rem;
 	color: #DFA72D;
 	align-self: center;
-	margin: 0.5rem 0;
-	animation-name: achicar;
-	animation-duration: 3s;
-	animation-iteration-count: 3;
-	animation-timing-function: ease-in-out;
-	animation-direction: alternate;
-	animation-delay: 1s;
-	
+	margin: 0.5rem 0;			
+	animation-name: brillo;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
 }
-@keyframes achicar {
-	0% {
-		font-size: 2rem;
-	}
-	50% {
-		font-size: 1.5rem;
-	}
-	100% {
-		font-size: 1rem;
-	}
+
+@keyframes brillo {
+	from{
+		text-shadow: 0 0 10px #ffff;
+	} 
+	to {
+		text-shadow: 0 0 40px #ffff;
+	}		
 }
 
 .nav-header {
 	margin: .5rem 0;
 	width: 100vw;
-
 }
 
 .ul-nav {
 	display: flex;
 	justify-content: space-around;
-
 }
 
 .ul-nav li {
 	font-family: 'Aldrich', sans-serif;
 	font-size: .8rem;
-
 }
+
+
 
 /*----- Media Query Header y nav -----*/
 @media screen and (min-width: 768px) {
@@ -173,6 +166,7 @@ article {
 article p {
 	font-size: 1.1rem;
 	text-align: center;
+	padding: .5rem;
 }
 
 article img {
@@ -222,25 +216,34 @@ article img {
 	.h3-article {
 		color: #f1db0c;
 		font-size: 1.8rem;
-		text-align: flex-end;
+		text-align: center;
 	}
 
 	article {
 		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-		margin: 1.5rem 1.5rem;
+		justify-content: center;
+		align-items: center;
+		margin: 1.5rem;
+		text-align: center;
+	}
 
+	.div-article{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: center;
 	}
 
 	article p {
 		font-size: 1.1rem;
 		text-align: start;
+		padding: 1rem;
 	}
 
 	article img {
-		width: 500px;
-		margin: 0.5rem 0;
+		width: 400px;
+		margin: 1rem;
 
 	}
 
