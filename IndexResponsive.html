@@ -4,6 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<title>PitBulls Cordoba</title>
 	<meta name="keywords"
 		content="perro,perros,pitbull,terrier,staffordshire,dogo,bull,perruno,agresivos,amorosos,fuerza,accesorios,juguetes">
@@ -18,15 +22,45 @@
 	<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Stick+No+Bills:wght@500;600&display=swap"
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
-<body class="body-index">
+<body class="container-fluid body-index">
+	
 	<!--Empieza el Header y el Nav-->
-	<header>
+
+	<header class="container-fluid">
 
 		<h1 class="h1-header">PITBULLS CORDOBA</h1>
+		
+		<nav class="navbar navbar-expand-md">
+			<div class="container-fluid">
+			  <a class="navbar-brand active" aria-current="page" href="IndexResponsive.html">Home</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./pages/accesorios.html">Accesorios</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./pages/juguetes.html">Juguetes</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./pages/contacto.html">Contacto</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+
+		<!--
 		<nav class="nav-header">
 			<ul class="ul-nav">
 				<li><a class="active" href="IndexResponsive.html">Inicio</a></li>
@@ -36,127 +70,176 @@
 				<li><a href="pages/contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
+		-->
 
 	</header>
 	<!--Termina el Header y el Nav-->
+
 	<main class="main-index">
+
+		<!--Empieza section sobre razas conocidas-->
 		<section>
-			<!--Empieza section articulos sobre razas conocidas-->
+			
 			<h2 class="h2-section">RAZAS CONOCIDAS</h2>
+
 			<article>
+
 				<h3 class="h3-article">American Pitbull Terrier</h3>
-				<div class="div-article">
-					<img src="images/american-pitbull-terrier.png" alt="american-pitbull-terrier"
-						title="american-pitbull-terrier">
-					<p>
-						El pit bull terrier americano (APBT, por sus siglas en inglés: American Pit Bull Terrier) es una
-						raza de perro, originaria de Estados Unidos, que surgió a partir de la raza de los
-						bull-and-terriers, importados desde el Reino Unido en el siglo XIX. Su esperanza de vida es de
-						12 a 17 años. Se utilizaban como perros de pelea hasta que estos eventos fueron prohibidos en
-						1976; actualmente son criados como mascotas y atletas en deportes legales (aunque sigue siendo
-						la raza predilecta en las peleas de perros, ahora realizadas de forma clandestina). Los APBT
-						pueden mostrar agresión hacia otros perros y animales si no se les da la educación adecuada,
-						como cualquier otra raza. Este hecho, junto con la fuerza de los APBT y su determinación, debe
-						tomarse en cuenta cuando se piensa tener un APBT. Como con cualquier perro, la socialización y
-						el entrenamiento constante son elementos que se deben manejar desde muy temprana edad.
 
-						La versión oficial del origen del APBT en el estándar de la raza elaborado por el United Kennel
-						Club, dice que el APBT es un descendiente del bull-and-terrier un antiguo tipo de perro que era
-						una mezcla de antiguo bulldog y terrier, muy utilizado en peleas de perros y que es el
-						antepasado de todos los perros terriers de tipo bull. Estos perros han venido a los Estados
-						Unidos en el siglo XIX por los inmigrantes británicos e irlandeses, y se perfeccionó hasta que
-						en 1898 un grupo de criadores se reunió y fundó el United Kennel Club para reconocer la nueva
-						raza, llamada American pit bull terrier("Bull terrier americano de foso"). Hay amplia
-						evidencia de que esta versión es una verdad histórica.
-					</p>
+				<div class="row">
+					<div class="col-12 col-md-5"><img class="rounded-4" src="images/american-pitbull-terrier.png"
+							alt="american-pitbull-terrier" title="american-pitbull-terrier">
+					</div>
+					<div class="col-12 col-md-7">
+						<p>
+							El pit bull terrier americano (APBT, por sus siglas en inglés: American Pit Bull Terrier) es
+							una raza de perro, originaria de Estados Unidos, que surgió a partir de la raza de los
+							bull-and-terriers, importados desde el Reino Unido en el siglo XIX. Su esperanza de vida es
+							de 12 a 17 años. Se utilizaban como perros de pelea hasta que estos eventos fueron
+							prohibidos en 1976; actualmente son criados como mascotas y atletas en deportes legales (aunque sigue
+							siendo la raza predilecta en las peleas de perros, ahora realizadas de forma clandestina).
+							Los APBT pueden mostrar agresión hacia otros perros y animales si no se les da la educación adecuada,
+							como cualquier otra raza. Este hecho, junto con la fuerza de los APBT y su determinación,
+							debe tomarse en cuenta cuando se piensa tener un APBT. Como con cualquier perro, la
+							socialización y el entrenamiento constante son elementos que se deben manejar desde muy temprana edad.
+
+							La versión oficial del origen del APBT en el estándar de la raza elaborado por el United
+							Kennel Club, dice que el APBT es un descendiente del bull-and-terrier un antiguo tipo de
+							perro que era una mezcla de antiguo bulldog y terrier, muy utilizado en peleas de perros y que es el
+							antepasado de todos los perros terriers de tipo bull. Estos perros han venido a los Estados
+							Unidos en el siglo XIX por los inmigrantes británicos e irlandeses, y se perfeccionó hasta
+							que en 1898 un grupo de criadores se reunió y fundó el United Kennel Club para reconocer la
+							nueva raza, llamada American pit bull terrier("Bull terrier americano de foso"). Hay amplia
+							evidencia de que esta versión es una verdad histórica.
+						</p>
+					</div>
+
 				</div>
+
 			</article>
+
 			<article>
+
 				<h3 class="h3-article">American Bully</h3>
-				<div class="div-article">
-					<img src="images/american-bully.png" alt="american-bully" title="american-bully">
-					<p>
-						American Bully es una raza de perro de compañía, de tamaño estándar, tipo Terrier de origen
-						Norteamericano.Es reconocida principalmente por el United Kennel Club (desde 2013), Club Híbrido
-						Canino Americano y por el ABKC (American Bully Kennel Club), en Estados Unidos, y por Alianz
-						Canine y la CRCPE ( Conservación de las razas caninas puras en España ), en España, ambas
-						entidades reconocidas oficialmente por el Ministerio de Agricultura, Ganadería y Medio Ambiente
-						de España.
-						Es una raza relativamente joven (1980) aunque su desarrollo y el reconocimiento de esta no fue
-						hasta 1990. De acuerdo con UKC, la raza se ha obtenido por medio de la cruza de las razas
-						American Staffordshire Terrier (Amstaff), Staffordshire bull terrier, Pit bull (del UKC),
-						Bulldog Inglés, Olde english bulldogge, Bulldog americano y el Bulldog francés. Sin embargo,
-						existen controversias con respecto a la participación del Pit bull ya que el UKC acepta
-						registrar Amstaffs como pit bull terriers, y los perros del UKC utilizados en las cruzas eran de
-						líneas de Amstaff. El ABKC (American Bully Kennel Club), por ejemplo, destaca la gran similitud
-						entre el bully y el Amstaff, señalando como única diferencia la apariencia física.
-						Sus criadores pusieron especial cuidado en conseguir un perro que fuera un excelente compañero
-						familiar, seleccionando cuidadosamente los atributos más deseables del American Stafforshire
-						Terrier, con el temperamento noble y tranquilo del bulldog, con lo que se ha conseguido una
-						mascota de temperamento leal y delicado, aunque físicamente (a pesar de su estampa robusta) deja
-						mucho que desear debido a que no desempeña ninguna función de trabajo como perro.
-					</p>
+
+				<div class="row">
+					<div class="col-12 col-md-5"><img class="rounded-4" src="images/american-bully.png" alt="american-bully"
+							title="american-bully">
+					</div>
+					<div class="col-12 col-md-7">
+						<p>
+							American Bully es una raza de perro de compañía, de tamaño estándar, tipo Terrier de origen
+							Norteamericano.Es reconocida principalmente por el United Kennel Club (desde 2013), Club
+							Híbrido Canino Americano y por el ABKC (American Bully Kennel Club), en Estados Unidos, y
+							por Alianz Canine y la CRCPE ( Conservación de las razas caninas puras en España ), en España, ambas
+							entidades reconocidas oficialmente por el Ministerio de Agricultura, Ganadería y Medio
+							Ambiente de España.
+							Es una raza relativamente joven (1980) aunque su desarrollo y el reconocimiento de esta no
+							fue hasta 1990.
+
+							De acuerdo con UKC, la raza se ha obtenido por medio de la cruza de las razas
+							American Staffordshire Terrier (Amstaff), Staffordshire bull terrier, Pit bull (del UKC),
+							Bulldog Inglés, Olde english bulldogge, Bulldog americano y el Bulldog francés. Sin embargo,
+							existen controversias con respecto a la participación del Pit bull ya que el UKC acepta
+							registrar Amstaffs como pit bull terriers, y los perros del UKC utilizados en las cruzas
+							eran de líneas de Amstaff.
+
+							El ABKC (American Bully Kennel Club), por ejemplo, destaca la gran similitud entre el bully
+							y el Amstaff, señalando como única diferencia la apariencia física. Sus criadores pusieron
+							especial cuidado en conseguir un perro que fuera un excelente compañero familiar,
+							seleccionando cuidadosamente los atributos más deseables del American Stafforshire
+							Terrier, con el temperamento noble y tranquilo del bulldog, con lo que se ha conseguido una
+							mascota de temperamento leal y delicado, aunque físicamente (a pesar de su estampa robusta)
+							deja mucho que desear debido a que no desempeña ninguna función de trabajo como perro.
+						</p>
+					</div>
+
 				</div>
+
 			</article>
+
 			<article>
+
 				<h3 class="h3-article">Staffordshire Bull Terrier</h3>
-				<div class="div-article">
-					<img src="images/Staffordshire-Bull-Terrier.png" alt="Staffordshire-Bull-Terrier"
-						title="Staffordshire-Bull-Terrier">
-					<p>
-						El Staffordshire Bull Terrier o Staffy es una raza originaria de Staffordshire (Inglaterra).
-						Obtenida de la mezcla de bulldog con terriers de la época. Es una raza con más de 200 años de
-						historia. En mayo de 1935 se fundó el primer Club de Staffordshire Bull Terrier (The
-						Staffordshire Bull Terrier Club) en el que se fijó su nombre y su estándar. El aspecto general
-						de la raza ha cambiado considerablemente hasta la actualidad.
-						Fueron perros creados con fines lúdicos para el ser humano. La raza fue creada a partir de
-						cruces de los antiguos Bulldog inglés (que poco tiene que ver con el actual) con Terriers
-						(cazadores de alimañas) de la época para crear un perro (llamado Bull and Terrier) potente y
-						tenaz además de osado y rápido para las peleas de perros, tejones u osos. Los Bulldogs (usados
-						para aguantar las reses mientras se desangraban, para cualquier fiesta, reunión o menester en
-						las granjas, o también para los espectáculos) mordían y no soltaban, y los terriers tenían un
-						temperamento más intrépido. Su primera utilización fue para las peleas con toros y osos en las
-						que se enviaban dos o más perros a luchar contra un oso o contra un toro atado. Una vez se
-						prohibió este entretenimiento, surgieron las peleas de perros en fosos o rings llamados pit, y
-						los pitrats, que consistían en soltar al perro en un foso lleno de ratas y evaluar cuantas ratas
-						mataba en un determinado tiempo; el perro que más ratas matase era el ganador. Ocasionalmente
-						eran utilizados también para la caza.
-					</p>
+
+				<div class="row">
+					<div class="col-12 col-md-5"><img class="rounded-4" src="images/Staffordshire-Bull-Terrier.png"
+							alt="Staffordshire-Bull-Terrier" title="Staffordshire-Bull-Terrier">
+					</div>
+					<div class="col-12 col-md-7">
+						<p>
+							El Staffordshire Bull Terrier o Staffy es una raza originaria de Staffordshire (Inglaterra).
+							Obtenida de la mezcla de bulldog con terriers de la época. Es una raza con más de 200 años
+							de historia. En mayo de 1935 se fundó el primer Club de Staffordshire Bull Terrier (The
+							Staffordshire Bull Terrier Club) en el que se fijó su nombre y su estándar. El aspecto
+							general de la raza ha cambiado considerablemente hasta la actualidad.
+
+							Fueron perros creados con fines lúdicos para el ser humano. La raza fue creada a partir de
+							cruces de los antiguos Bulldog inglés (que poco tiene que ver con el actual) con Terriers
+							(cazadores de alimañas) de la época para crear un perro (llamado Bull and Terrier) potente y
+							tenaz además de osado y rápido para las peleas de perros, tejones u osos. Los Bulldogs
+							(usados para aguantar las reses mientras se desangraban, para cualquier fiesta, reunión o
+							menester
+							en las granjas, o también para los espectáculos) mordían y no soltaban, y los terriers
+							tenían
+							un temperamento más intrépido.
+
+							Su primera utilización fue para las peleas con toros y osos en
+							las que se enviaban dos o más perros a luchar contra un oso o contra un toro atado. Una vez
+							se
+							prohibió este entretenimiento, surgieron las peleas de perros en fosos o rings llamados pit,
+							y los pitrats, que consistían en soltar al perro en un foso lleno de ratas y evaluar cuantas
+							ratas mataba en un determinado tiempo; el perro que más ratas matase era el ganador.
+							Ocasionalmente eran utilizados también para la caza.
+						</p>
+					</div>
+
 				</div>
+
 			</article>
+
 			<article>
+
 				<h3 class="h3-article">American Staffordshire Terrier</h3>
-				<div class="div-article">
-					<img src="images/american-staffordshire-terrier.png" alt="american-staffordshire-terrier"
-						title="American-Staffordshire">
-					<p>
-						El American Staffordshire Terrier, AST O Amstaff es una raza canina originaria de Estados
-						Unidos. El Amstaff es una raza canina que pertenece al grupo Terrier descendiente del American
-						Pitbull Terrier. No hay que confundirla con su variante Inglesa de menor tamaño (Staffordshire
-						Bull Terrier o Staffy) o con el Bull terrier, aunque tengan nombres muy similares.
-						Cuando un grupo de criadores de American Pitbull Terrier quisieron comenzar a emplear a esta
-						raza para otro tipo de trabajo que no fueran los combates, comenzaron a seleccionar dentro de
-						los pitbulls, perros con determinadas características como mayor peso, solo los de trufa negra,
-						ojos oscuros, etc.
 
-						Dado que el American Pitbull Terrier solo se seleccionaba por sus capacidades en trabajo no eran
-						una raza homogénea, había y hay actualmente, alturas que van desde los 35 cm (muy utilizados en
-						peleas) a los que llegan a 60 o más (más utilizados en salto vertical, arrastre etc). Tampoco
-						eran homogéneas las orejas, ni los colores.
+				<div class="row">
+					<div class="col-12 col-md-5"><img class="rounded-4" src="images/american-staffordshire-terrier.png"
+							alt="american-staffordshire-terrier" title="American-Staffordshire">
+					</div>
+					<div class="col-12 col-md-7">
+						<p>
+							El American Staffordshire Terrier, AST O Amstaff es una raza canina originaria de Estados
+							Unidos. El Amstaff es una raza canina que pertenece al grupo Terrier descendiente del
+							American Pitbull Terrier. No hay que confundirla con su variante Inglesa de menor tamaño
+							(Staffordshire Bull Terrier o Staffy) o con el Bull terrier, aunque tengan nombres muy similares.
+							Cuando un grupo de criadores de American Pitbull Terrier quisieron comenzar a emplear a esta
+							raza para otro tipo de trabajo que no fueran los combates, comenzaron a seleccionar dentro
+							de los pitbulls, perros con determinadas características como mayor peso, solo los de trufa
+							negra, ojos oscuros, etc.
 
-						Para que una raza sea registrada por la FCI (Federación Cinológica Internacional )ha de tener un
-						estándar, bien definido,con unos límites de peso, altura, colores, inserción de las orejas, la
-						cola, temperamento, etc, por lo que un grupo de criadores comenzaron con un duro trabajo a
-						seleccionar a Pitbulls con las características que ellos creían más adecuadas.
+							Dado que el American Pitbull Terrier solo se seleccionaba por sus capacidades en trabajo no
+							eran una raza homogénea, había y hay actualmente, alturas que van desde los 35 cm (muy utilizados
+							en peleas) a los que llegan a 60 o más (más utilizados en salto vertical, arrastre etc).
+							Tampoco eran homogéneas las orejas, ni los colores.
 
-						Cabe mencionar que la raza American Staffordshire Terrier no ha sido cruzada con ninguna otra,
-						son sencillamente Pitbulls seleccionados. Con los años, ambas razas comenzaron a diferenciarse
-						más, debido a la selección y la crianza. Los primeros American Stafford eran muy distintos a los
-						que conocemos hoy día, más cercanos al Pitbull, esto con el tiempo ha ido cambiando, encontrando
-						ahora una raza muy bien definida y diferenciada de su predecesora.
-					</p>
+							Para que una raza sea registrada por la FCI (Federación Cinológica Internacional )ha de
+							tener un estándar, bien definido,con unos límites de peso, altura, colores, inserción de las orejas,
+							la cola, temperamento, etc, por lo que un grupo de criadores comenzaron con un duro trabajo a
+							seleccionar a Pitbulls con las características que ellos creían más adecuadas.
+
+							Cabe mencionar que la raza American Staffordshire Terrier no ha sido cruzada con ninguna
+							otra, son sencillamente Pitbulls seleccionados. Con los años, ambas razas comenzaron a
+							diferenciarse más, debido a la selección y la crianza. Los primeros American Stafford eran muy distintos a
+							los que conocemos hoy día, más cercanos al Pitbull, esto con el tiempo ha ido cambiando,
+							encontrando
+							ahora una raza muy bien definida y diferenciada de su predecesora.
+						</p>
+					</div>
+
 				</div>
+
 			</article>
+
 		</section>
 		<!--Termina section articulos sobre razas conocidas-->
 
@@ -164,6 +247,7 @@
 		<section class="videos-index">
 
 			<h2 class="h2-videos">VIDEOS DE ENTRETENIMIENTO</h2>
+
 			<div class="div-videos">
 				<div>
 					<iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/y6IiLTm7rI4"
@@ -213,101 +297,165 @@
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
+
 			</div>
+
 		</section>
 		<!--Termina seccion de videos-->
 
+		<!--Empieza section sobre razas relacionadas-->
 		<section>
-			<!--Empieza otro section articulos sobre razas relacionadas-->
+			
 			<h2 class="h2-section">RAZAS RELACIONADAS</h2>
+
 			<article>
+
 				<h3 class="h3-article">Bull Terrier</h3>
-				<div class="div-article">
-					<img src="images/bull-terrier.png" alt="bull-terrier" title="bull-terrier">
-					<p>
-						El Bull terrier o bull terrier inglés es una raza canina de la familia de los terrier. Son
-						conocidos por la forma única de su cabeza y sus pequeños ojos en forma triangular. Su
-						temperamento ha sido descrito como amante de la diversión, así como activos y graciosos. Han
-						aparecido como personajes en tiras cómicas, libros, películas y publicidad.
 
-						Se utilizaban como perros de pelea hasta que estas actividades fueron prohibidas en 1976. Aunque
-						el nombre pueda llevar a confusión, el bull terrier no está directamente relacionado con el pit
-						bull terrier americano. Sin embargo, ambas razas tienen la misma ascendencia. El estándar de
-						Bull terrier miniatura es muy parecido al del Bull terrier, salvo en lo relativo a la alzada a
-						la cruz, que no debe superar los 35,5 cm. Debe dar la impresión de buena sustancia para el
-						tamaño del perro. No hay límite en el peso. El ejemplar debe ser armónico en todo momento.
+				<div class="row">
+					<div class="col-12 col-md-5"><img class="rounded-4" src="images/bull-terrier.png" alt="bull-terrier"
+							title="bull-terrier">
+					</div>
+					<div class="col-12 col-md-7">
+						<p>
+							El Bull terrier o bull terrier inglés es una raza canina de la familia de los terrier.
+							Son conocidos por la forma única de su cabeza y sus pequeños ojos en forma triangular. Su
+							temperamento ha sido descrito como amante de la diversión, así como activos y graciosos.
+							Han aparecido como personajes en tiras cómicas, libros, películas y publicidad.
 
-						Según la Federación Cinológica Internacional (FCI), las dos variedades de bull terrier conforman
-						una sola raza, pero son juzgadas por separado y no deben cruzarse.
+							Se utilizaban como perros de pelea hasta que estas actividades fueron prohibidas en
+							1976. Aunque el nombre pueda llevar a confusión, el bull terrier no está directamente relacionado con
+							el pit bull terrier americano. Sin embargo, ambas razas tienen la misma ascendencia. El
+							estándar de Bull terrier miniatura es muy parecido al del Bull terrier, salvo en lo relativo a la
+							alzada a la cruz, que no debe superar los 35,5 cm. Debe dar la impresión de buena sustancia para
+							el tamaño del perro. No hay límite en el peso. El ejemplar debe ser armónico en todo
+							momento.
 
-						Son adiestrados para exposiciones, véase adiestrador. Como perros de defensa. Acepta un
-						adiestramiento muy avanzado. Órdenes como sentarse, tumbarse aun cuando se le ordene correr,
-						caminar, correr, traer objetos, soltar un objeto o una persona quieta, morder, buscar personas,
-						acudir, etc. No es un perro considerado potencialmente peligroso debido a sus características
-						físicas.
-					</p>
+							Según la Federación Cinológica Internacional (FCI), las dos variedades de bull terrier
+							conforman una sola raza, pero son juzgadas por separado y no deben cruzarse.
+
+							Son adiestrados para exposiciones, véase adiestrador. Como perros de defensa. Acepta un
+							adiestramiento muy avanzado. Órdenes como sentarse, tumbarse aun cuando se le ordene
+							correr, caminar, correr, traer objetos, soltar un objeto o una persona quieta, morder, buscar
+							personas, acudir, etc. No es un perro considerado potencialmente peligroso debido a sus
+							características
+							físicas.
+						</p>
+					</div>
+
 				</div>
+
 			</article>
+
 			<article>
+
 				<h3 class="h3-article">Dogo Argentino</h3>
-				<div class="div-article">
-					<img src="images/dogo-argentino.png" alt="dogo-argentino" title="dogo-argentino">
-					<p>
-						El dogo argentino es una raza de perro de presa utilizada para la caza mayor, es originaria de
-						la Provincia de Córdoba, región mediterránea de la República Argentina.
-						Junto con el Perro Pila Argentino, el Galgo Barbucho Patagónico y el nuevo Perro Pampa Argentino
-						son las únicas razas de perros desarrolladas en la República Argentina que aún existen. Las
-						otras
-						dos, el perro polar argentino y el perro de pelea cordobés, se encuentran extintas.
 
-						Fue desarrollada por el médico argentino Dr. Antonio Nores Martínez, nacido en Córdoba en el año
-						1907 y fallecido en el año 1956, eminente y activo cirujano, quien buscaba un animal adecuado
-						para la caza mayor de especies habituales en Argentina, tales como jabalíes, pecaríes, pumas y
-						zorros colorados. En la década de 1920, Nores Martínez (ayudado por su hermano Agustín, su padre
-						Antonio y tíos) decidió crear una raza de presa que reuniera las mejores cualidades del perro de
-						pelea cordobés, pero con unas dimensiones y una fuerza física superiores. Además, buscaba un
-						perro que tuviese aptitudes para la caza en jauría, pero que fuese capaz de batir o parar él
-						solo a la presa en combate hasta la llegada de su amo o el resto de sus congéneres.
+				<div class="row">
+					<div class="col-12 col-md-5"><img class="rounded-4" src="images/dogo-argentino.png" alt="dogo-argentino"
+							title="dogo-argentino">
+					</div>
+					<div class="col-12 col-md-7">
+						<p>
+							El dogo argentino es una raza de perro de presa utilizada para la caza mayor, es
+							originaria de la Provincia de Córdoba, región mediterránea de la República Argentina.
+							Junto con el Perro Pila Argentino, el Galgo Barbucho Patagónico y el nuevo Perro Pampa
+							Argentino son las únicas razas de perros desarrolladas en la República Argentina que aún existen.
+							Las otras dos, el perro polar argentino y el perro de pelea cordobés, se encuentran extintas.
 
-						Se utilizó como base fundacional al perro de pelea cordobés —ahora extinto—, que era una mezcla
-						de razas introducidas en la Argentina por los emigrantes ingleses, Bull terrier y bulldog, con
-						razas que habían traído los españoles, alano español y mastín español. A estas cruzas, que se
-						utilizaban en las peleas de perros, se sumaron líneas de sangre bull terrier y Mastín del
-						Pirineo. Así, en la decimotercera generación, consiguieron perros de combate.
-					</p>
+							Fue desarrollada por el médico argentino Dr. Antonio Nores Martínez, nacido en Córdoba
+							en el año 1907 y fallecido en el año 1956, eminente y activo cirujano, quien buscaba un animal
+							adecuado para la caza mayor de especies habituales en Argentina, tales como jabalíes, pecaríes,
+							pumas y zorros colorados. En la década de 1920, Nores Martínez (ayudado por su hermano Agustín,
+							su padre Antonio y tíos) decidió crear una raza de presa que reuniera las mejores cualidades del
+							perro de pelea cordobés, pero con unas dimensiones y una fuerza física superiores. Además,
+							buscaba un perro que tuviese aptitudes para la caza en jauría, pero que fuese capaz de batir o
+							parar él solo a la presa en combate hasta la llegada de su amo o el resto de sus congéneres.
+
+							Se utilizó como base fundacional al perro de pelea cordobés —ahora extinto—, que era una
+							mezcla de razas introducidas en la Argentina por los emigrantes ingleses, Bull terrier y
+							bulldog, con razas que habían traído los españoles, alano español y mastín español. A estas cruzas,
+							que se utilizaban en las peleas de perros, se sumaron líneas de sangre bull terrier y Mastín
+							del Pirineo. Así, en la decimotercera generación, consiguieron perros de combate.
+						</p>
+					</div>
 				</div>
+
 			</article>
+
 		</section>
 		<!--Termina otro section articulos sobre razas relacionadas-->
 	</main>
 
-	<footer>
-		<!--Empieza el footer-->
-		<div>
-			<h4>NUESTRAS REDES</h4>
-			<ul class="ul-redes">
-				<li><a href="https://www.instagram.com/lnsta.pits/?hl=es" target="_blank"><img class="icons-footer"
-							src="./iconos/instagram.png" alt="icon-instagram">Instagram</a></li>
-				<li><a href="https://es-la.facebook.com/pitbullsbigfans12/" target="_blank"><img class="icons-footer"
-							src="iconos/facebook.png" alt="icon-facebook">Facebook</a></li>
-			</ul>
-		</div>
-		<div>
-			<h4>CONTACTANOS</h4>
-			<ul>
-				<li><img class="icons-footer" src="iconos/wsapp.png" alt="icon-wsapp">+5493517319092</li>
-				<li><img class="icons-footer" src="iconos/email.png" alt="icon-email">pitbullscba@gmail.com</li>
-			</ul>
-		</div>
-		<div>
-			<ul class="ul-pages">
-				<li><a href="pages/nosotros.html">Nosotros</a></li>
-				<li><a href="pages/accesorios.html">Accesorios</a></li>
-				<li><a href="pages/juguetes.html">Juguetes</a></li>
-			</ul>
-		</div>
+	<!--Empieza el footer-->
+	<footer class="container-fluid">
+
+		<nav class="navbar navbar-expand-md">
+			<div class="container-fluid row">
+
+			  <a class="col-1 navbar-brand" href="#">Menu</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			<div class="col-4 collapse navbar-collapse" id="navbarNav">
+				<h4>NUESTRAS REDES</h4>
+				<ul class="ul-redes navbar-nav">
+					<li class="nav-item"><a href="https://www.instagram.com/lnsta.pits/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+					<li class="nav-item"><a href="https://es-la.facebook.com/pitbullsbigfans12/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+				</ul>
+			</div>
+
+			<div class="col-4 collapse navbar-collapse" id="navbarNav">
+				<h4>CONTACTANOS</h4>
+				<ul class="navbar-nav">
+					<li class="nav-item"><i class="fa-brands fa-whatsapp"></i>+5493517319092</li>
+					<li class="nav-item"><i class="fa-solid fa-envelope-circle-check"></i>pitbullscba@gmail.com</li>
+				</ul>
+			</div>
+
+			<div class="col-3 collapse navbar-collapse" id="navbarNav">
+				<ul class="ul-pages navbar-nav">
+					<li class="nav-item"><a href="pages/nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a href="pages/accesorios.html">Accesorios</a></li>
+					<li class="nav-item"><a href="pages/juguetes.html">Juguetes</a></li>
+				</ul>
+			</div>
+
+			  <!--<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Features</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link disabled">Disabled</a>
+				  </li>
+				</ul>
+			  </div>-->
+			</div>
+		  </nav>
+
+
+		
+					
+			
+		
 	</footer>
 	<!--Termina el footer-->
+
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
