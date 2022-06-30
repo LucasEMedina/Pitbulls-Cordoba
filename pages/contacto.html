@@ -80,26 +80,40 @@
 
     <main class="contact-main">
 
-        <form method="post" class="contact-form">
-            <label for="name">Nombre y Apellido</label>
-            <input type="text" id="name" placeholder="Carlos Villagran" required>
-            <br><br>
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="amordeperros@gmail.com" required>
-            <br><br>
-            <label for="password">Password</label>
-            <input type="password" required>
-            <br><br>
-            <label for="save-data">Guardar mis datos</label>
-            <input type="checkbox">
-            <br><br>
-            <label for="comments">En que te podemos ayudar?</label>
-            <br>
-            <textarea id="comments" cols="30" rows="10" placeholder="Dejanos tus comentarios"></textarea>
-            <br>
-            <input class="boton-form" type="submit" value="Enviar formulario">
-            <input class="boton-form" type="reset" value="Limpiar formulario">
-        </form>
+        <form class="my-4 px-3">
+
+            <div class="mb-3">
+                <label for="exampleInputText" class="form-label">NOMBRE Y APELLIDO</label>
+                <input type="text" class="form-control" placeholder="Carlos Villagran" id="exampleInputText">
+              </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
+              <input type="email" class="form-control" placeholder="amordeperros@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">PASSWORD</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">GUARDAR MIS DATOS</label>
+            </div>
+
+            <div class="form">
+                <label for="floatingTextarea2" class="form-label">En que te podemos ayudar?</label>                
+                <textarea class="form-control" placeholder="Dejanos tus comentarios aquí!!" style="height: 100px"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg mt-3 p-0">Enviar</button>
+            <button type="reset" class="btn btn-primary btn-lg mt-3 mx-3 p-0">Reset</button>
+            
+          </form>   
+
+        
     </main>
 	
     <!--Empieza el footer-->

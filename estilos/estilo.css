@@ -402,49 +402,56 @@ footer {
 .contact-main {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem 0;
 	justify-content: center;
 	align-items: center;
-	
+	background-color: #33140557;
 }
 
-.contact-form input {
+.form-control {
 	background-color: #33140557;
 	border: none;
 	color: #e4d5d5;
 	font-family: 'Mohave', sans-serif;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
-.contact-form textarea {
-	background-color: #33140557;
-	font-family: 'Mohave', sans-serif;
-	color: #e4d5d5;
-	font-size: 1rem;
-	margin: .5rem;
-}
-
-.contact-form label {
+.form-label {
 	color: #701205;
 	font-family: 'Stick No Bills', sans-serif;
 	font-weight: 700;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 }
 
-.contact-form .boton-form {
-	background-color: #c00b0bb4;
-	padding: 0 .5rem;
-	border-radius: 5px;
+.form-text{
+	color: #701205;
+	font-size: 1rem;
+}
+
+.form-check-label {
+	color: #701205;
+	font-family: 'Stick No Bills', sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.form-check-input{
+	width: 20px;
+	height: 20px;
+}
+
+.btn-primary {
+	background-color: #c00b0bdc;
+	width: 40%;
 }
 
 ::placeholder {
-	color: #1f1b19;
+	color: #331303;
 	font-size: 1rem;
 }
 
 /*----- Media Query pagina Contacto -----*/
 /*--- No se hace Media Query para 768px xq se ve perfecto con las propiedades originales---*/
-
+/*
 @media screen and (min-width: 1024px){
 	.contact-body{
 		height: 100vh;
