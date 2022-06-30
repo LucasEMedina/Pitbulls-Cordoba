@@ -556,16 +556,18 @@ footer {
 /*----- Final de Estilos pagina Nosotros -----*/
 
 /*----- Estilos pagina Accesorios -----*/
-.accesorios-body {
-	background-image: url(../fondos/huesos-green.png);
-	background-size: contain;	
-}
 
 .contain-accesorios{
-	display: flex;
+	background-image: url(../fondos/huesos-green.png);
+	background-size: contain;
+	/*display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #44261757;
+	background-color: #44261757;*/
+}
+
+.card{
+	width: 240px;
 }
 
 .contain-accesorios h2 {
@@ -583,6 +585,7 @@ footer {
 	height: 200px;
 	border: solid 1px black;
 }
+/*
 .arnes-pecheras{
 	display: grid;
 	grid-template-columns: 250px;
@@ -636,7 +639,7 @@ footer {
 	font-family: 'Mohave', sans-serif;
 	color: #f7d309;
 	padding: .5rem;
-}
+}*/
 
 .contain-accesorios div article:hover {
 	background: linear-gradient(to top, #53c234ce, #061700ce);
@@ -645,7 +648,7 @@ footer {
 /*----- Media Query pagina Accesorios -----*/
 
 @media screen and (min-width: 768px) {
-
+	/*
 	.arnes-pecheras{
 		grid-template-columns: 280px 280px;
 		grid-template-rows: repeat(4, 370px);
@@ -679,12 +682,12 @@ footer {
 
 	.contain-accesorios article h3{
 		font-size: 1.5rem;
-	}
+	}*/
 
 }
 
 @media screen and (min-width: 1024px) {
-
+	/*
 	.arnes-pecheras{
 		grid-template-columns: repeat(3,280px);
 		grid-template-rows: repeat(3, 370px);
@@ -714,7 +717,7 @@ footer {
 	.contain-accesorios article {
 		padding: .5rem;
 		margin: .5rem 1rem;
-	}
+	}*/
 
 	.contain-accesorios h2 {
 		font-size: 2.5rem;
@@ -730,7 +733,7 @@ footer {
 	background-image: url(../fondos/huesos-yellow.png);
 	background-size: contain;
 }
-
+/*
 .contain-juguetes{
 	background-color: #44261757;
 	display: flex;
@@ -738,7 +741,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
-
+*/
 .contain-juguetes img {
 	width: 200px;
 	height: 200px;
@@ -755,7 +758,7 @@ footer {
 	background-color: #f7df0c73;
 	width: 100vw;
 }
-
+/*
 .juguetes-mordillos{
 	display: grid;
 	grid-template-columns: 250px;
@@ -802,7 +805,7 @@ footer {
 	font-size: 1.5rem;
 	color: #ffffff;
 }
-
+*/
 .contain-juguetes div article:hover{
 	background: linear-gradient(to top, #ba8c02ce, #181818ce);
 }
@@ -810,7 +813,7 @@ footer {
 /*----- Media Query pagina Juguetes -----*/
 
 @media screen and (min-width: 768px) {
-
+	/*
 	.juguetes-mordillos{
 		grid-template-columns: 280px 280px;
 		grid-template-rows: repeat(3, 400px);
@@ -830,13 +833,13 @@ footer {
 		grid-template-columns: 280px 280px;
 		grid-template-rows: repeat(3, 400px);	
 	}
-	
+	*/
 	.contain-juguetes h2{
 		font-size: 2.5rem;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 	}
-
+	/*
 	.contain-juguetes article {
 		padding: .5rem;
 		margin: .5rem 1rem;
@@ -845,11 +848,11 @@ footer {
 	.contain-juguetes article h3{
 		font-size: 1.5rem;
 	}
-
+	*/
 }
 
 @media screen and (min-width: 1024px) {
-
+	/*
 	.juguetes-mordillos{
 		grid-template-columns: repeat(3,280px);
 		grid-template-rows: repeat(2, 360px);
@@ -869,7 +872,7 @@ footer {
 		grid-template-columns: repeat(3,280px);
 		grid-template-rows: repeat(2, 380px);	
 	}
-	
+	*/
 	.contain-juguetes h2 {
 		font-size: 2.5rem;
 	}
