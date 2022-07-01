@@ -160,7 +160,7 @@ header {
 /*----- Section y articles -----*/
 
 .main-index{
-	background: linear-gradient(to bottom, #beac4f, #333333);
+	background-image: url(../fondos/madera-oscura.png);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -194,6 +194,11 @@ header {
 	text-align: center;
 	margin: 1rem 0;
 }
+
+.text-article{
+	color: #d8d3b8;
+}
+
 .row{
 	justify-content: center;
 	align-items: flex-start;
@@ -255,8 +260,10 @@ header {
 .videos-index {
 	width: auto;
 	height: auto;
-	background-image: url(../fondos/mama-cachorro.png);
+	background-image: url(../fondos/madera-barniz.png);
+	background-size: cover;
 }
+
 /*
 .div-videos {
 	display: flex;
@@ -278,6 +285,11 @@ header {
 	width: 300px;
 	height: 168px;
 }
+
+.flecha-cambio{
+	color: red;
+}
+
 
 /*----- Media Query Videos -----*/
 
@@ -400,10 +412,6 @@ footer {
 }
 
 .contact-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background-color: #33140557;
 }
 
@@ -416,38 +424,32 @@ footer {
 }
 
 .form-label {
-	color: #701205;
+	color: #f0dd30;
 	font-family: 'Stick No Bills', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 1.5rem;
+	text-shadow: 2px -2px 5px #000000;
 }
 
 .form-text{
-	color: #701205;
+	color: #201f1f;
 	font-size: 1rem;
 }
 
 .form-check-label {
-	color: #701205;
+	color: #f0dd30;
 	font-family: 'Stick No Bills', sans-serif;
-	font-weight: 700;
 	font-size: 1.2rem;
-}
-
-.form-check-input{
-	width: 20px;
-	height: 20px;
+	text-shadow: 2px -2px 5px #000000;
 }
 
 .btn-primary {
-	background-color: #c00b0bdc;
+	color: #f0dd30;
+	background: linear-gradient(to bottom, #c31432, #240b36);
 	width: 40%;
+	border-color: #000000;
 }
 
-::placeholder {
-	color: #331303;
-	font-size: 1rem;
-}
 
 /*----- Media Query pagina Contacto -----*/
 /*--- No se hace Media Query para 768px xq se ve perfecto con las propiedades originales---*/
@@ -565,16 +567,23 @@ footer {
 /*----- Estilos pagina Accesorios -----*/
 
 .contain-accesorios{
-	background-image: url(../fondos/huesos-green.png);
-	background-size: contain;
-	/*display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #44261757;*/
+	background-image: url(../fondos/madera-blanca.png);
+	background-size: cover;
+	background-attachment: fixed;	
 }
 
 .card{
 	width: 240px;
+	background: linear-gradient(to top, #a3a3a0, #9b9261);	
+}
+
+.card-img-top{
+	transform: scale(1);
+	transition: .3s;
+}
+
+.card-img-top:hover{
+	transform: scale(1.2);
 }
 
 .contain-accesorios h2 {
@@ -646,11 +655,11 @@ footer {
 	font-family: 'Mohave', sans-serif;
 	color: #f7d309;
 	padding: .5rem;
-}*/
+}
 
 .contain-accesorios div article:hover {
 	background: linear-gradient(to top, #53c234ce, #061700ce);
-}
+}*/
 
 /*----- Media Query pagina Accesorios -----*/
 
@@ -694,6 +703,12 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+	.contain-accesorios h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+
 	/*
 	.arnes-pecheras{
 		grid-template-columns: repeat(3,280px);
@@ -726,11 +741,7 @@ footer {
 		margin: .5rem 1rem;
 	}*/
 
-	.contain-accesorios h2 {
-		font-size: 2.5rem;
-		font-weight: 700;
-	}
-
+	
 }
 
 /*----- Final de Estilos pagina Accesorios -----*/
