@@ -1,0 +1,46 @@
+
+.contact-body {
+	background-image: url(../fondos/pb-marron.png);
+	background-size: cover;
+	background-position: center;
+		
+}
+
+.contact-main {
+	background-color: #33140557;
+}
+
+.form-control {
+	background-color: #33140557;
+	border: none;
+	color: #e4d5d5;
+	font-family: 'Mohave', sans-serif;
+	font-size: 1.2rem;
+}
+
+.form-label {
+	color: #f0dd30;
+	font-family: 'Stick No Bills', sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	text-shadow: 2px -2px 5px #000000;
+}
+
+.form-text{
+	color: #201f1f;
+	font-size: 1rem;
+}
+
+.form-check-label {
+	color: #f0dd30;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 1.2rem;
+	text-shadow: 2px -2px 5px #000000;
+}
+
+.btn-primary {
+	color: #f0dd30;
+	background: linear-gradient(to bottom, #c31432, #240b36);
+	width: 40%;
+	border-color: #000000;
+}

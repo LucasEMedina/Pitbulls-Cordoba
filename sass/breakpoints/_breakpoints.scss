@@ -1,0 +1,30 @@
+
+@mixin small-cel {
+    @media screen and (min-width: 468px){
+        @content;
+    }
+}
+
+@mixin tablet-md {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin descktop-lg {
+    @media screen and (min-width: 992px){
+        @content;
+    }
+}
+
+@mixin descktop-l {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin descktop-xl {
+    @media screen and (min-width: 1200px){
+        @content;
+    }
+}

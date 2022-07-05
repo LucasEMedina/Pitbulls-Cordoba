@@ -1,0 +1,117 @@
+.body-index {
+	display: flex;
+	flex-direction: column;	
+	padding: 0;
+	margin: 0;
+}
+
+.main-index{
+	background-image: url(../fondos/madera-oscura.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.section-index {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.h2-section {
+	color: #680909;
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 2.2rem;
+	text-align: center;
+	margin: 1rem;
+	text-shadow: 2px -2px 5px #f1db0c;
+	transition-property: text-shadow;
+	transition-duration: 1s;
+	transition-delay: .5s;
+}
+
+ .h2-section:hover{
+	text-shadow: 10px -10px 5px #f1db0c;
+ }
+
+.h3-article {
+	color: #f1db0c;
+	font-size: 1.8rem;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.text-article{
+	color: #d8d3b8;
+}
+
+.row{
+	justify-content: center;
+	align-items: flex-start;
+	
+}
+.col-12{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.col-12 p{
+	margin-top: 1rem;
+	padding: 0 .8rem;
+
+    @include descktop-l {
+        margin-top: .8rem;
+    }
+}
+
+.row img{
+	width: 300px;
+	box-shadow: 5px 5px 10px;
+	margin-top: .5rem;
+
+    @include descktop-l {
+        width: 400px;
+		margin-top: 1rem;
+    }
+}
+
+
+.videos-index {
+	width: auto;
+	height: auto;
+	background-image: url(../fondos/madera-barniz.png);
+	background-size: cover;
+}
+
+.h2-videos {
+	font-family: 'Stick No Bills', sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: #f0dd30;
+
+    @include small-cel {
+        font-size: 2rem;
+    }
+
+    @include descktop-l {
+        font-size: 2.5rem;
+    }
+}
+
+.iframe {
+	width: 300px;
+	height: 168px;
+
+    @include small-cel {
+        width: 400px;
+		height: 225px;
+    }
+
+    @include tablet-md {
+        width: 560px;
+		height: 315px;
+    }
+}
+
+

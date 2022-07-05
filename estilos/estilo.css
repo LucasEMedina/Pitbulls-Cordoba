@@ -28,13 +28,13 @@ li {
 }
 
 
-/*----- Media Query Body Index -----*/
+/*----- Media Query Body Index -----*//*
 @media screen and (min-width: 1024px){
 	.body-index{
 		background-size: contain;
 	}
 
-}
+}*/
 
 
 /*----- Header y nav -----*/
