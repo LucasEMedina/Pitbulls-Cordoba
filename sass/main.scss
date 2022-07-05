@@ -1,19 +1,19 @@
-@import "reset";
+@import "./reset/reset";
 
-@import "utilities";
+@import "./utilities/utilities";
 
-@import "breakpoints";
+@import "./breakpoints/breakpoints";
 
-@import "headernav";
+@import "./pages/headernav";
 
-@import "footer";
+@import "./pages/index";
 
-@import "index";
+@import "./pages/footer";
 
-@import "contacto";
+@import "./pages/contacto";
 
-@import "nosotros";
+@import "./pages/nosotros";
 
-@import "accesorios";
+@import "./pages/accesorios";
 
-@import "juguetes";
+@import "./pages/juguetes";
