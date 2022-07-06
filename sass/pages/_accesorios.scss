@@ -1,8 +1,31 @@
 
 .contain-accesorios{
 	background-image: url(../fondos/madera-blanca.png);
-	background-size: cover;
-	background-attachment: fixed;	
+	background-size: contain;
+	/*background-attachment: fixed;*/
+	
+	img {
+		width: 200px;
+		height: 200px;
+		border: solid 1px $black;
+	}
+
+	h2 {
+		text-align: center;
+		font-family: $ff-stick-h2;
+		font-size: 2rem;
+		font-weight: 700;
+		color: $clr-secundario;
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+		background-color: #f7df0c73;
+		width: 100vw;
+		
+		@include descktop-l {
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+	}
 }
 
 .card{
@@ -13,29 +36,12 @@
 .card-img-top{
 	transform: scale(1);
 	transition: .3s;
+
+	&:hover{
+		transform: scale(1.2);
+	}
 }
 
-.card-img-top:hover{
-	transform: scale(1.2);
-}
 
-.contain-accesorios h2 {
-	text-align: center;
-	font-family: 'Stick No Bills', sans-serif;
-	font-size: 2rem;
-	font-weight: 700;
-	color: #7C330F;
-	margin-top: 1.5rem;
-	margin-bottom: 1rem;
 
-    @include descktop-l {
-        font-size: 2.5rem;
-		font-weight: 700;
-    }
-}
 
-.contain-accesorios img {
-	width: 200px;
-	height: 200px;
-	border: solid 1px black;
-}

@@ -1,32 +1,34 @@
 
 footer {
-	font-family: 'Aldrich', sans-serif;
+	font-family: $ff-aldrich-ft;
 	font-size: 1rem;
-	background: linear-gradient(to right, #000000, #434343);
+	background: linear-gradient(to right, #000000, #434343);	
 }
 
-.ul-footer a{
-	color: #d8d3b8;
-}
+.ul-footer {
+	a {
+		color: $clr-articles;
+	}
 
-.ul-footer li{
-	color: #d8d3b8;	
+	li {
+		color: $clr-articles;	
+	}
 }
 
 .fa-instagram{
 	margin-right: .2rem;
-	color: #da1657;
+	color: $red-insta;
 }
 .fa-facebook{
 	margin-right: .2rem;
-	color: #1375e6;
+	color: $red-face;
 }
 .fa-whatsapp{
-	color: #0cc734;
+	color: $red-wtapp;
 	margin-right: .2rem;
 }
 
 .fa-solid{
 	margin-right: .2rem;
-	color: #557da3;
+	color: $red-mail;
 }

@@ -19,61 +19,67 @@
 }
 
 .h2-section {
-	color: #680909;
-	font-family: 'Stick No Bills', sans-serif;
+	color: $clr-secundario;
+	font-family: $ff-stick-h2;
 	font-size: 2.2rem;
 	text-align: center;
 	margin: 1rem;
-	text-shadow: 2px -2px 5px #f1db0c;
+	text-shadow: 2px -2px 5px $clr-tercer;
 	transition-property: text-shadow;
 	transition-duration: 1s;
 	transition-delay: .5s;
+
+	&:hover{
+		text-shadow: 10px -10px 5px $clr-tercer;
+	 }
 }
 
- .h2-section:hover{
-	text-shadow: 10px -10px 5px #f1db0c;
- }
-
+ 
 .h3-article {
-	color: #f1db0c;
+	color: $clr-tercer;
+	font-family: $ff-mohave-p;
+	font-weight: 600;
 	font-size: 1.8rem;
 	text-align: center;
 	margin: 1rem 0;
 }
 
 .text-article{
-	color: #d8d3b8;
+	color: $clr-articles;
 }
 
 .row{
 	justify-content: center;
 	align-items: flex-start;
 	
+	img{
+		width: 300px;
+		box-shadow: 5px 5px 10px;
+		margin-top: .5rem;
+	
+		@include descktop-l {
+			width: 400px;
+			margin-top: 1rem;
+		}
+	}
 }
+
 .col-12{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
 
-.col-12 p{
-	margin-top: 1rem;
-	padding: 0 .8rem;
-
-    @include descktop-l {
-        margin-top: .8rem;
-    }
-}
-
-.row img{
-	width: 300px;
-	box-shadow: 5px 5px 10px;
-	margin-top: .5rem;
-
-    @include descktop-l {
-        width: 400px;
+	p{
 		margin-top: 1rem;
-    }
+		padding: 0 .8rem;
+		font-family: $ff-mohave-p;
+		font-weight: 400;
+		font-size: 1.1rem;
+	
+		@include descktop-l {
+			margin-top: .8rem;
+		}
+	}
 }
 
 
@@ -85,10 +91,10 @@
 }
 
 .h2-videos {
-	font-family: 'Stick No Bills', sans-serif;
+	font-family: $ff-stick-h2;
 	font-weight: 600;
 	font-size: 1.5rem;
-	color: #f0dd30;
+	color: $clr-tercer;
 
     @include small-cel {
         font-size: 2rem;

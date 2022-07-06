@@ -7,40 +7,40 @@
 }
 
 .contact-main {
-	background-color: #33140557;
+	background-color: $back-dark;
 }
 
 .form-control {
-	background-color: #33140557;
+	background-color: $back-dark;
 	border: none;
-	color: #e4d5d5;
-	font-family: 'Mohave', sans-serif;
+	color: $clr-articles;
+	font-family: $ff-mohave-p;
 	font-size: 1.2rem;
 }
 
 .form-label {
-	color: #f0dd30;
-	font-family: 'Stick No Bills', sans-serif;
+	color: $clr-tercer;
+	font-family: $ff-stick-h2;
 	font-weight: 400;
 	font-size: 1.5rem;
-	text-shadow: 2px -2px 5px #000000;
+	text-shadow: 2px -2px 5px $black;
 }
 
 .form-text{
-	color: #201f1f;
+	color: $black;
 	font-size: 1rem;
 }
 
 .form-check-label {
-	color: #f0dd30;
-	font-family: 'Stick No Bills', sans-serif;
+	color: $clr-tercer;
+	font-family: $ff-stick-h2;
 	font-size: 1.2rem;
-	text-shadow: 2px -2px 5px #000000;
+	text-shadow: 2px -2px 5px $black;
 }
 
 .btn-primary {
-	color: #f0dd30;
+	color: $clr-tercer;
 	background: linear-gradient(to bottom, #c31432, #240b36);
 	width: 40%;
-	border-color: #000000;
+	border-color: $black;
 }
