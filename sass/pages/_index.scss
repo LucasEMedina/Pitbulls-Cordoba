@@ -1,0 +1,123 @@
+.body-index {
+	display: flex;
+	flex-direction: column;	
+	padding: 0;
+	margin: 0;
+}
+
+.main-index{
+	background-image: url(../fondos/madera-oscura.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.section-index {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.h2-section {
+	color: $clr-secundario;
+	font-family: $ff-stick-h2;
+	font-size: 2.2rem;
+	text-align: center;
+	margin: 1rem;
+	text-shadow: 2px -2px 5px $clr-tercer;
+	transition-property: text-shadow;
+	transition-duration: 1s;
+	transition-delay: .5s;
+
+	&:hover{
+		text-shadow: 10px -10px 5px $clr-tercer;
+	 }
+}
+
+ 
+.h3-article {
+	color: $clr-tercer;
+	font-family: $ff-mohave-p;
+	font-weight: 600;
+	font-size: 1.8rem;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.text-article{
+	color: $clr-articles;
+}
+
+.row{
+	justify-content: center;
+	align-items: flex-start;
+	
+	img{
+		width: 300px;
+		box-shadow: 5px 5px 10px;
+		margin-top: .5rem;
+	
+		@include descktop-l {
+			width: 400px;
+			margin-top: 1rem;
+		}
+	}
+}
+
+.col-12{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	p{
+		margin-top: 1rem;
+		padding: 0 .8rem;
+		font-family: $ff-mohave-p;
+		font-weight: 400;
+		font-size: 1.1rem;
+	
+		@include descktop-l {
+			margin-top: .8rem;
+		}
+	}
+}
+
+
+.videos-index {
+	width: auto;
+	height: auto;
+	background-image: url(../fondos/madera-barniz.png);
+	background-size: cover;
+}
+
+.h2-videos {
+	font-family: $ff-stick-h2;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: $clr-tercer;
+
+    @include small-cel {
+        font-size: 2rem;
+    }
+
+    @include descktop-l {
+        font-size: 2.5rem;
+    }
+}
+
+.iframe {
+	width: 300px;
+	height: 168px;
+
+    @include small-cel {
+        width: 400px;
+		height: 225px;
+    }
+
+    @include tablet-md {
+        width: 560px;
+		height: 315px;
+    }
+}
+
+

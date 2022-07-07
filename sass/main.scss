@@ -1,15 +1,24 @@
-@import "reset";
 
-@import "utilities";
+@import "./general/reset";
 
-@import "breakpoints";
+@import "./general/utilities";
 
-@import "index";
+@import "./variables/variables";
 
-@import "contacto";
+@import "./variables/breakpoints";
 
-@import "nosotros";
+@import "./pages/headernav";
 
-@import "accesorios";
+@import "./pages/index";
 
-@import "juguetes";
+@import "./pages/footer";
+
+@import "./pages/contacto";
+
+@import "./pages/nosotros";
+
+@import "./pages/accesorios";
+
+@import "./pages/juguetes";
+
+

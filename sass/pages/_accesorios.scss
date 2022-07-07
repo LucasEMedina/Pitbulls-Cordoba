@@ -1,0 +1,47 @@
+
+.contain-accesorios{
+	background-image: url(../fondos/madera-blanca.png);
+	background-size: contain;
+	/*background-attachment: fixed;*/
+	
+	img {
+		width: 200px;
+		height: 200px;
+		border: solid 1px $black;
+	}
+
+	h2 {
+		text-align: center;
+		font-family: $ff-stick-h2;
+		font-size: 2rem;
+		font-weight: 700;
+		color: $clr-secundario;
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+		background-color: #f7df0c73;
+		width: 100vw;
+		
+		@include descktop-l {
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+	}
+}
+
+.card{
+	width: 240px;
+	background: linear-gradient(to top, #a3a3a0, #9b9261);	
+}
+
+.card-img-top{
+	transform: scale(1);
+	transition: .3s;
+
+	&:hover{
+		transform: scale(1.2);
+	}
+}
+
+
+
+

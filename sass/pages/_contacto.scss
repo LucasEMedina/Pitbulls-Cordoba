@@ -1,0 +1,46 @@
+
+.contact-body {
+	background-image: url(../fondos/pb-marron.png);
+	background-size: cover;
+	background-position: center;
+		
+}
+
+.contact-main {
+	background-color: $back-dark;
+}
+
+.form-control {
+	background-color: $back-dark;
+	border: none;
+	color: $clr-articles;
+	font-family: $ff-mohave-p;
+	font-size: 1.2rem;
+}
+
+.form-label {
+	color: $clr-tercer;
+	font-family: $ff-stick-h2;
+	font-weight: 400;
+	font-size: 1.5rem;
+	text-shadow: 2px -2px 5px $black;
+}
+
+.form-text{
+	color: $black;
+	font-size: 1rem;
+}
+
+.form-check-label {
+	color: $clr-tercer;
+	font-family: $ff-stick-h2;
+	font-size: 1.2rem;
+	text-shadow: 2px -2px 5px $black;
+}
+
+.btn-primary {
+	color: $clr-tercer;
+	background: linear-gradient(to bottom, #c31432, #240b36);
+	width: 40%;
+	border-color: $black;
+}

@@ -1,0 +1,30 @@
+
+.nosotros-body {
+	background-image: url(../fondos/cachorro-blue.png);
+	background-size: cover;
+}
+
+.nosotros-section {
+	background-color: $back-dark;
+}
+
+.nosotros-article {
+	color: $clr-articles;
+}
+
+.nosotros-article hr{
+	width: 80%;			
+	animation-name: width;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes width {
+	from{
+		width: 10%;
+	} 
+	to {
+		width: 80%;
+	}		
+}	
