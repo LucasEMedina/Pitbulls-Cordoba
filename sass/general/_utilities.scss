@@ -1,0 +1,23 @@
+/*---- Utilities ----*/
+
+@mixin column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.card {	
+	@include column-center;
+	
+    text-align: center;
+	width: 240px;
+}
+
+$icons-color: (
+    instagram: #da1657,
+    facebook: #1375e6,
+    whatsapp: #0cc734,
+    email: #557da3,
+)

@@ -1,4 +1,4 @@
-
+/*---- Footer ----*/
 footer {
 	font-family: $ff-aldrich-ft;
 	font-size: 1rem;
@@ -15,20 +15,10 @@ footer {
 	}
 }
 
-.fa-instagram{
-	margin-right: .2rem;
-	color: $red-insta;
-}
-.fa-facebook{
-	margin-right: .2rem;
-	color: $red-face;
-}
-.fa-whatsapp{
-	color: $red-wtapp;
-	margin-right: .2rem;
+@each $icon-red, $color in $icons-color {
+	.fa-#{$icon-red}{
+		color: $color;
+		margin-right: .2rem;
+	}
 }
 
-.fa-solid{
-	margin-right: .2rem;
-	color: $red-mail;
-}

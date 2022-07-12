@@ -24,6 +24,17 @@ li {
 
 /* ---- COLORES ---- */
 /* ---- FONTS ---- */
+/*---- Utilities ----*/
+.card, .card-juguetes, .card-accesorios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 240px;
+}
+
+/*---- Header/Nav ----*/
 header {
   display: flex;
   flex-direction: column-reverse;
@@ -104,6 +115,7 @@ header {
   color: #fff;
 }
 
+/*---- Index ----*/
 .body-index {
   display: flex;
   flex-direction: column;
@@ -227,6 +239,7 @@ header {
   }
 }
 
+/*---- Footer ----*/
 footer {
   font-family: "Aldrich", sans-serif;
   font-size: 1rem;
@@ -241,13 +254,13 @@ footer {
 }
 
 .fa-instagram {
-  margin-right: 0.2rem;
   color: #da1657;
+  margin-right: 0.2rem;
 }
 
 .fa-facebook {
-  margin-right: 0.2rem;
   color: #1375e6;
+  margin-right: 0.2rem;
 }
 
 .fa-whatsapp {
@@ -255,11 +268,12 @@ footer {
   margin-right: 0.2rem;
 }
 
-.fa-solid {
-  margin-right: 0.2rem;
+.fa-email {
   color: #557da3;
+  margin-right: 0.2rem;
 }
 
+/*---- Contacto ----*/
 .contact-body {
   background-image: url(../fondos/pb-marron.png);
   background-size: cover;
@@ -305,6 +319,7 @@ footer {
   border-color: #000000;
 }
 
+/*---- Nosotros ----*/
 .nosotros-body {
   background-image: url(../fondos/cachorro-blue.png);
   background-size: cover;
@@ -334,10 +349,10 @@ footer {
     width: 80%;
   }
 }
+/*---- Accesorios ----*/
 .contain-accesorios {
   background-image: url(../fondos/madera-blanca.png);
   background-size: contain;
-  /*background-attachment: fixed;*/
 }
 .contain-accesorios img {
   width: 200px;
@@ -362,9 +377,8 @@ footer {
   }
 }
 
-.card {
-  width: 240px;
-  background: linear-gradient(to top, #a3a3a0, #9b9261);
+.card-accesorios {
+  background: linear-gradient(to top, #e4e4ce, #bea931);
 }
 
 .card-img-top {
@@ -375,6 +389,7 @@ footer {
   transform: scale(1.2);
 }
 
+/*---- Juguetes ----*/
 .juguetes-body {
   background-image: url(../fondos/madera-gastada.png);
   background-size: contain;
@@ -390,9 +405,9 @@ footer {
   font-family: "Stick No Bills", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #000000;
+  color: #7C330F;
   margin-top: 1.5rem;
-  background-color: rgba(247, 223, 12, 0.4509803922);
+  background-color: rgba(242, 152, 74, 0.6862745098);
   width: 100vw;
 }
 @media screen and (min-width: 768px) {
@@ -401,6 +416,10 @@ footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+}
+
+.card-juguetes {
+  background: linear-gradient(to bottom, #f2994a, #eed896);
 }
 
 /*# sourceMappingURL=estilo.css.map */
