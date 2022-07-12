@@ -1,9 +1,9 @@
+/*---- Accesorios ----*/
 
 .contain-accesorios{
 	background-image: url(../fondos/madera-blanca.png);
 	background-size: contain;
-	/*background-attachment: fixed;*/
-	
+		
 	img {
 		width: 200px;
 		height: 200px;
@@ -28,9 +28,10 @@
 	}
 }
 
-.card{
-	width: 240px;
-	background: linear-gradient(to top, #a3a3a0, #9b9261);	
+.card-accesorios {	
+	@extend .card;
+
+	background: linear-gradient(to top, #e4e4ce, #bea931);	
 }
 
 .card-img-top{

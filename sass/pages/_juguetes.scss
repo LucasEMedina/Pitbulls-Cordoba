@@ -1,3 +1,4 @@
+/*---- Juguetes ----*/
 
 .juguetes-body {
 	background-image: url(../fondos/madera-gastada.png);
@@ -17,9 +18,9 @@
 		font-family: $ff-stick-h2;
 		font-size: 2rem;
 		font-weight: 700;
-		color: $black;
+		color: $clr-secundario;
 		margin-top: 1.5rem;
-		background-color: #f7df0c73;
+		background-color: #f2984aaf;
 		width: 100vw;
 
     	@include tablet-md {
@@ -28,4 +29,10 @@
 			margin-bottom: 1rem;
     	}    
 	}
+}
+
+.card-juguetes {
+	@extend .card;
+
+	background: linear-gradient(to bottom, #f2994a, #eed896);
 }
