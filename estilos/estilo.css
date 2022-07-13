@@ -22,8 +22,6 @@ li {
   text-align: center;
 }
 
-/* ---- COLORES ---- */
-/* ---- FONTS ---- */
 /*---- Utilities ----*/
 .card, .card-juguetes, .card-accesorios {
   display: flex;
@@ -34,6 +32,8 @@ li {
   width: 240px;
 }
 
+/* ---- COLORES ---- */
+/* ---- FONTS ---- */
 /*---- Header/Nav ----*/
 header {
   display: flex;
