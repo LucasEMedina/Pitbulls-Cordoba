@@ -13,11 +13,9 @@
 	background-attachment: fixed;
 }
 
-.section-index {	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.section-index {
+	@include column-center	
+	
 }
 
 .h2-section {
@@ -67,16 +65,15 @@
 }
 
 .col-12{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include column-center;
 
 	p{
 		margin-top: 1rem;
-		padding: 0 .8rem;
+		padding: 0 2rem;
 		font-family: $ff-mohave-p;
 		font-weight: 400;
 		font-size: 1.1rem;
+		text-align: justify;
 	
 		@include descktop-l {
 			margin-top: .8rem;
