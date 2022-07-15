@@ -51,11 +51,14 @@
 .row{
 	justify-content: center;
 	align-items: flex-start;
+	width: 100%;
+	margin: 0;
 	
 	img{
 		width: 300px;
 		box-shadow: 5px 5px 10px;
 		margin-top: .5rem;
+		margin-bottom: 1rem;
 	
 		@include descktop-l {
 			width: 400px;
@@ -68,7 +71,7 @@
 	@include column-center;
 
 	p{
-		margin-top: 1rem;
+		margin-top: 0;
 		padding: 0 2rem;
 		font-family: $ff-mohave-p;
 		font-weight: 400;
@@ -83,10 +86,14 @@
 
 
 .videos-index {
-	width: auto;
+	max-width: 100%;
 	height: auto;
 	background-image: url(../fondos/madera-barniz.png);
 	background-size: cover;
+
+	@include tablet-md{
+		max-width: 90%;
+	}
 }
 
 .h2-videos {
