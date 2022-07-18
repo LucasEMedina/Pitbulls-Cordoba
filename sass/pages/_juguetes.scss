@@ -21,7 +21,7 @@
 		color: $clr-secundario;
 		margin-top: 1.5rem;
 		background-color: #f2984aaf;
-		width: 100vw;
+		width: 98vw;
 
     	@include tablet-md {
         	font-size: 2.5rem;
@@ -35,4 +35,6 @@
 	@extend .card;
 
 	background: linear-gradient(to bottom, #f2994a, #eed896);
+	font-family: $ff-rubik-nos;
+	
 }

@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Aldrich&family=Stick+No+Bills:wght@500;600&display=swap);
 @import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,7 +39,6 @@ li {
 header {
   display: flex;
   flex-direction: column-reverse;
-  width: 100vw;
   background: linear-gradient(to right, #000000, #434343);
   justify-content: center;
   align-items: flex-end;
@@ -197,11 +197,6 @@ header {
   font-size: 1.1rem;
   text-align: justify;
 }
-@media screen and (min-width: 1024px) {
-  .col-12 p {
-    margin-top: 0.8rem;
-  }
-}
 
 .videos-index {
   max-width: 100%;
@@ -341,6 +336,7 @@ footer {
 
 .nosotros-article {
   color: #d8d3b8;
+  font-family: "Rubik", sans-serif;
 }
 
 .nosotros-article hr {
@@ -378,7 +374,7 @@ footer {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   background-color: rgba(247, 223, 12, 0.4509803922);
-  width: 100vw;
+  width: 98vw;
 }
 @media screen and (min-width: 1024px) {
   .contain-accesorios h2 {
@@ -389,6 +385,7 @@ footer {
 
 .card-accesorios {
   background: linear-gradient(to top, #e4e4ce, #bea931);
+  font-family: "Rubik", sans-serif;
 }
 
 .card-img-top {
@@ -418,7 +415,7 @@ footer {
   color: #7C330F;
   margin-top: 1.5rem;
   background-color: rgba(242, 152, 74, 0.6862745098);
-  width: 100vw;
+  width: 98vw;
 }
 @media screen and (min-width: 768px) {
   .contain-juguetes h2 {
@@ -430,6 +427,7 @@ footer {
 
 .card-juguetes {
   background: linear-gradient(to bottom, #f2994a, #eed896);
+  font-family: "Rubik", sans-serif;
 }
 
 /*# sourceMappingURL=estilo.css.map */

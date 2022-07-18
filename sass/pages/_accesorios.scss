@@ -19,7 +19,7 @@
 		margin-top: 1.5rem;
 		margin-bottom: 1rem;
 		background-color: #f7df0c73;
-		width: 100vw;
+		width: 98vw;
 		
 		@include descktop-l {
 			font-size: 2.5rem;
@@ -31,7 +31,9 @@
 .card-accesorios {	
 	@extend .card;
 
-	background: linear-gradient(to top, #e4e4ce, #bea931);	
+	background: linear-gradient(to top, #e4e4ce, #bea931);
+	font-family: $ff-rubik-nos;
+		
 }
 
 .card-img-top{
