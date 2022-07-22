@@ -38,3 +38,10 @@
 	font-family: $ff-rubik-nos;
 	
 }
+
+.btn-jugt{
+	@extend .btn-card;
+	
+	background: linear-gradient(to bottom, #f2994a, #eed896);
+}
+

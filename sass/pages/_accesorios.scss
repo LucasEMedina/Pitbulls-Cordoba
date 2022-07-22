@@ -36,6 +36,12 @@
 		
 }
 
+.btn-acces{
+	@extend .btn-card;
+
+	background: linear-gradient(to top, #e4e4ce, #bea931);
+}
+
 .card-img-top{
 	transform: scale(1);
 	transition: .3s;

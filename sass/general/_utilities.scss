@@ -13,6 +13,28 @@
 	
     text-align: center;
 	width: 240px;
+    height: 420px;
+    cursor: pointer;
+}
+
+.btn-card {
+	color: #424242be;
+	width: 100%;
+    height: 100%;
+	border-radius: 5px;
+	border-color: #696969be;
+	transition: .5s;
+
+	a{
+		color: #424242be;
+	}
+	
+	&:hover{
+		a{
+			color: $clr-tercer;
+		}	
+		background: linear-gradient(to bottom, #c31432, #240b36);		
+	}
 }
 
 $icons-color: (

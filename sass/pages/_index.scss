@@ -27,7 +27,7 @@
 	text-shadow: 2px -2px 5px $clr-tercer;
 	transition-property: text-shadow;
 	transition-duration: 1s;
-	transition-delay: .5s;
+	transition-delay: .3s;
 
 	&:hover{
 		text-shadow: 10px -10px 5px $clr-tercer;
@@ -44,9 +44,6 @@
 	margin: 1rem 0;
 }
 
-.text-article{
-	color: $clr-articles;
-}
 
 .row{
 	justify-content: center;
@@ -77,7 +74,7 @@
 		font-weight: 400;
 		font-size: 1.1rem;
 		text-align: justify;
-	
+		color: $clr-articles;
 	}
 }
 

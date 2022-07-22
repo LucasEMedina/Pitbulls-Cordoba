@@ -23,6 +23,8 @@ li {
   text-align: center;
 }
 
+/* ---- COLORES ---- */
+/* ---- FONTS ---- */
 /*---- Utilities ----*/
 .card, .card-juguetes, .card-accesorios {
   display: flex;
@@ -31,10 +33,28 @@ li {
   align-items: center;
   text-align: center;
   width: 240px;
+  height: 420px;
+  cursor: pointer;
 }
 
-/* ---- COLORES ---- */
-/* ---- FONTS ---- */
+.btn-card, .btn-jugt, .btn-acces {
+  color: rgba(66, 66, 66, 0.7450980392);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border-color: rgba(105, 105, 105, 0.7450980392);
+  transition: 0.5s;
+}
+.btn-card a, .btn-jugt a, .btn-acces a {
+  color: rgba(66, 66, 66, 0.7450980392);
+}
+.btn-card:hover, .btn-jugt:hover, .btn-acces:hover {
+  background: linear-gradient(to bottom, #c31432, #240b36);
+}
+.btn-card:hover a, .btn-jugt:hover a, .btn-acces:hover a {
+  color: #f1db0c;
+}
+
 /*---- Header/Nav ----*/
 header {
   display: flex;
@@ -145,7 +165,7 @@ header {
   text-shadow: 2px -2px 5px #f1db0c;
   transition-property: text-shadow;
   transition-duration: 1s;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
 }
 .h2-section:hover {
   text-shadow: 10px -10px 5px #f1db0c;
@@ -158,10 +178,6 @@ header {
   font-size: 1.8rem;
   text-align: center;
   margin: 1rem 0;
-}
-
-.text-article {
-  color: #d8d3b8;
 }
 
 .row {
@@ -196,6 +212,7 @@ header {
   font-weight: 400;
   font-size: 1.1rem;
   text-align: justify;
+  color: #d8d3b8;
 }
 
 .videos-index {
@@ -253,6 +270,10 @@ footer {
 
 .ul-footer a {
   color: #d8d3b8;
+  transition: 0.3s;
+}
+.ul-footer a:hover {
+  color: rgba(242, 152, 74, 0.6862745098);
 }
 .ul-footer li {
   color: #d8d3b8;
@@ -261,21 +282,41 @@ footer {
 .fa-instagram {
   color: #da1657;
   margin-right: 0.2rem;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.fa-instagram:hover {
+  transform: scale(1.2);
 }
 
 .fa-facebook {
   color: #1375e6;
   margin-right: 0.2rem;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.fa-facebook:hover {
+  transform: scale(1.2);
 }
 
 .fa-whatsapp {
   color: #0cc734;
   margin-right: 0.2rem;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.fa-whatsapp:hover {
+  transform: scale(1.2);
 }
 
 .fa-email {
   color: #557da3;
   margin-right: 0.2rem;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.fa-email:hover {
+  transform: scale(1.2);
 }
 
 /*---- Contacto ----*/
@@ -286,11 +327,11 @@ footer {
 }
 
 .contact-main {
-  background-color: rgba(44, 21, 9, 0.2941176471);
+  background-color: rgba(32, 29, 27, 0.5803921569);
 }
 
 .form-control {
-  background-color: rgba(44, 21, 9, 0.2941176471);
+  background-color: rgba(32, 29, 27, 0.5803921569);
   border: none;
   color: #d8d3b8;
   font-family: "Mohave", sans-serif;
@@ -331,12 +372,12 @@ footer {
 }
 
 .nosotros-section {
-  background-color: rgba(44, 21, 9, 0.2941176471);
+  background-color: rgba(32, 29, 27, 0.5803921569);
 }
 
 .nosotros-article {
   color: #d8d3b8;
-  font-family: "Rubik", sans-serif;
+  font-family: "Mohave", sans-serif;
 }
 
 .nosotros-article hr {
@@ -388,6 +429,10 @@ footer {
   font-family: "Rubik", sans-serif;
 }
 
+.btn-acces {
+  background: linear-gradient(to top, #e4e4ce, #bea931);
+}
+
 .card-img-top {
   transform: scale(1);
   transition: 0.3s;
@@ -428,6 +473,10 @@ footer {
 .card-juguetes {
   background: linear-gradient(to bottom, #f2994a, #eed896);
   font-family: "Rubik", sans-serif;
+}
+
+.btn-jugt {
+  background: linear-gradient(to bottom, #f2994a, #eed896);
 }
 
 /*# sourceMappingURL=estilo.css.map */

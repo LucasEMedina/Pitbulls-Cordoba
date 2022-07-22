@@ -7,7 +7,13 @@ footer {
 
 .ul-footer {
 	a {
-		color: $clr-articles;
+		color: $clr-articles;		
+		transition: .3s;
+
+	&:hover{
+		color: #f2984aaf;
+	}
+		
 	}
 
 	li {
@@ -19,6 +25,13 @@ footer {
 	.fa-#{$icon-red}{
 		color: $color;
 		margin-right: .2rem;
+
+		transform: scale(1);
+		transition: .3s;
+
+	&:hover{
+		transform: scale(1.2);
+	}
 	}
 }
 
