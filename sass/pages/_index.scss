@@ -18,6 +18,23 @@
 	
 }
 
+.introduccion-pb{
+	font-family: $ff-mohave-p;
+	color: $clr-articles;
+	margin: 1rem 0;
+	padding: 1rem;
+	text-align: justify;
+	
+	background-color: rgba(0, 0, 0, 0.521);
+
+	@include tablet-md{
+	width: 60%;
+	font-size: 1.5rem;
+	margin: 2rem 0;
+	padding: 2rem;
+	}
+}
+
 .h2-section {
 	color: $clr-secundario;
 	font-family: $ff-stick-h2;
@@ -78,6 +95,7 @@
 	}
 }
 
+/*---- Section Videos Index ----*/
 
 .videos-index {
 	max-width: 100%;

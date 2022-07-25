@@ -1,3 +1,4 @@
+/*---- Reset ----*/
 @import url("https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Aldrich&family=Stick+No+Bills:wght@500;600&display=swap);
 @import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;500;600&display=swap");
@@ -38,21 +39,16 @@ li {
 }
 
 .btn-card, .btn-jugt, .btn-acces {
+  display: block;
   color: rgba(66, 66, 66, 0.7450980392);
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  border-color: rgba(105, 105, 105, 0.7450980392);
   transition: 0.5s;
 }
-.btn-card a, .btn-jugt a, .btn-acces a {
-  color: rgba(66, 66, 66, 0.7450980392);
-}
 .btn-card:hover, .btn-jugt:hover, .btn-acces:hover {
-  background: linear-gradient(to bottom, #c31432, #240b36);
-}
-.btn-card:hover a, .btn-jugt:hover a, .btn-acces:hover a {
   color: #f1db0c;
+  background: linear-gradient(to bottom, #c31432, #240b36);
 }
 
 /*---- Header/Nav ----*/
@@ -156,6 +152,23 @@ header {
   align-items: center;
 }
 
+.introduccion-pb {
+  font-family: "Mohave", sans-serif;
+  color: #d8d3b8;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+@media screen and (min-width: 768px) {
+  .introduccion-pb {
+    width: 60%;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 2rem;
+  }
+}
+
 .h2-section {
   color: #7C330F;
   font-family: "Stick No Bills", sans-serif;
@@ -215,6 +228,7 @@ header {
   color: #d8d3b8;
 }
 
+/*---- Section Videos Index ----*/
 .videos-index {
   max-width: 100%;
   height: auto;
