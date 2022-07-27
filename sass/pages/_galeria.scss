@@ -1,0 +1,104 @@
+/*---- Galeria ----*/
+
+.contain-galeria{
+    background-image: url(../fondos/madera-galeria.png);
+    @include column-center;
+    text-align: center;
+
+    h2{
+        font-family: $ff-stick-h2;
+		font-size: 2rem;
+		font-weight: 700;
+		color: $clr-secundario;
+        padding-top: 2rem;
+        text-shadow: 2px -2px 5px $clr-principal;
+    }
+}
+
+.grid-galeria{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: grid;
+    grid-template-rows: repeat(6, 300px);
+    grid-template-columns: 300px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet-md{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px;
+    }
+
+    @include descktop-lg {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px;
+        gap: 1rem;
+    }
+}
+
+.box-img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+	transition: .3s;
+
+	&:hover{
+		transform: scale(1.05);
+        z-index: 100;
+        cursor: pointer;
+	}
+    
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+.box-img:nth-child(1){
+    img{
+        object-position: left;
+    }
+    
+    @include tablet-md{
+        grid-column-start: span 2;
+    }
+
+    @include descktop-lg{
+        grid-column-start: span 2;
+    }
+}
+
+.box-img:nth-child(2){
+
+    @include descktop-lg{
+        grid-row-start: span 2;
+    }
+}
+
+.box-img:nth-child(6){
+    img{
+        object-position: right;
+    }
+
+    @include tablet-md{
+        grid-column-start: span 2;
+    }
+    
+    @include descktop-lg{
+        grid-column-start: span 2;
+    }
+}
+
