@@ -2,13 +2,14 @@
 
 ## Proyecto para Curso 37990 Desarrollador Web by Lucas Medina
 
-Bienvenidos. Este proyecto consta de un sitio web compuesto por cinco páginas:
+Bienvenidos. Este proyecto consta de un sitio web compuesto por seis páginas:
 
 <ul>
 <li>Home
 <li>Nosotros
 <li>Accesorios
 <li>Juguetes
+<li>Galeria
 <li>Contacto
 </ul>
 
@@ -35,6 +36,10 @@ Al igual que la sección Accesorios, en esta página publicamos productos, pero 
 Encontraras huesos de juguete, de cuero y naturales, mordillos y sogas para la destreza. 
 Super combos de pelotas y huesos comestibles.
 También tenemos comederos, bebederos y contenedores para guardar su comida.
+
+### Galeria
+En nuestras galeria verás imagenes muy copadas que puedes descargar como fondo de pantalla para todos tus dispositivos,
+celular, tablet y/o compu. No dudes en visitarla.
 
 ### Contacto
 Como su nombre bien lo indica, desde esta página te podrás poner en contacto con nosotros si deseas adquirir
